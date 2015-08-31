@@ -1,0 +1,61 @@
+﻿$def with(data)
+$var title: 邮件
+<script type="text/javascript">
+	function __doPostBack(id) {
+		document.forms[0].action = "/gm/mail?bid=" + id;
+		document.form.submit();
+	}
+
+	// 
+	function allCheck() {
+		var txtAdd = document.getElementsByName("addressees")[0];
+		var chkAll = document.getElementsByName("all")[0];
+		txtAdd.readOnly = chkAll.checked
+		if(chkAll.checked){
+			txtAdd.setAttribute('class','readonly');
+			txtAdd.value="全体玩家"
+		}
+		else{
+			txtAdd.removeAttribute('class');
+			txtAdd.value=""
+		}
+	}
+</script>
+<form method="post" action="/gm/mail">
+	<table>
+		<tr>
+			<td>收件人</td>
+			<td><input type="text" id="addressees" name="addressees"></td>
+		</tr>
+		<tr>
+			<td>全员</td>
+			<td><input type="checkbox" id="all" name="all"
+				onclick="javascript:allCheck()"></td>
+		</tr>
+		<tr>
+			<td>标题</td>
+			<td><input type="text"></td>
+		</tr>
+		<tr>
+			<td>正文</td>
+			<td><textarea rows="3" cols="20"></textarea></td>
+		</tr>
+		<tr>
+			<td>金币</td>
+			<td><input type="text" value="0"></td>
+		</tr>
+		<tr>
+			<td>钻石</td>
+			<td><input type="text" value="0"></td>
+		</tr>
+		<tr>
+			<td>附件</td>
+			<td><input type="submit" value="添加"
+				onclick="javascript:__doPostBack('addAttachment');"></td>
+		</tr>
+		<tr>
+			<td colspan="2"><input type="submit" value="发送邮件"
+				onclick="javascript:__doPostBack('send');"></td>
+		</tr>
+	</table>
+</form>

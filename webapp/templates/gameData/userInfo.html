@@ -1,0 +1,23 @@
+$def with(data)
+$var title: 用户登录
+<form method="post" action="/login">
+	$#:data
+	$#:data.render()
+	<table style="text-align: center;margin: 0 auto;">
+		<tr>
+			<td>$:data.userName.description</td>
+			<td>$:data.userName.render()</td>
+		</tr>
+		<tr>
+			<td>$:data.password.description</td>
+			<td>$:data.password.render()</td>
+		</tr>
+		<tr>
+			$if not data.valid:<td colspan="2" style="color:red;"><p class="error">输入错误</p></td>
+		</tr>
+		<tr>
+			<!--<td><input type="button" value="重置" /></td>-->
+			<td colspan="2">$:data.submit.render()</td>
+		</tr>
+	</table>
+</form>

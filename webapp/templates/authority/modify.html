@@ -1,0 +1,20 @@
+﻿$def with(data)
+$var title: 权限编辑
+<form method="post" action="/authority/modify">
+	<input type="hidden" id="authorityId" name="authorityId"
+		value="$data.id">
+	<table style="text-align: center; margin: 0 auto;">
+		<tr>
+			<td>权限名称</td>
+			<td><input type="text" id="text" name="text" value="$data.text" /></td>
+		</tr>
+		$for row in data.menuAll:
+			<tr style="text-align: left">
+				<td colspan="2"><input type="checkbox" id="menuId$row['menuId']"
+					name="menuId$row['menuId']" $data.dictMenuAuthority[row['menuId']] />$row["text"]</td>
+			</tr>
+		<tr>
+			<td colspan="2"><input type="submit" value="确定" /></td>
+		</tr>
+	</table>
+</form>

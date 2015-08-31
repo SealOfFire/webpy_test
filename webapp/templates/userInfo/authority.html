@@ -1,0 +1,13 @@
+$def with(data)
+$var title: 用户权限编辑
+<form method="post" action="/userInfo/authority">
+	<input type="hidden" id="hidUserName" name="hidUserName"
+		value="$data.userName"> 用户名:$data.userName
+	<table style="text-align: center; margin: 0 auto;">
+	   $for row in data.authorityList:
+			<tr style="text-align: left;">
+				<td><input type="radio" name="rdoAuthroity" value="$row['id']"  $row['checked']>$row["comment"]</td>
+			</tr>
+	</table>
+	<input type="submit" value="确定" />
+</form>

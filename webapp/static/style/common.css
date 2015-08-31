@@ -1,0 +1,96 @@
+﻿.readonly{
+	background-color:#696969;
+}
+
+.sample {
+    background-color: thistle;
+}
+
+.sample1 {
+    text-align: center;
+    margin: 0 auto;
+    width: 1024px;
+    height: auto;
+    background-color: darkgoldenrod;
+}
+
+    /* 标题栏样式 */
+    .sample1 .title {
+        background-color: white;
+    }
+
+    /* 一级导航菜单 */
+    .sample1 .navigation1 {
+        overflow: hidden;
+        background-color: grey;
+    }
+
+        .sample1 .navigation1 a {
+            color: yellow;
+        }
+
+        .sample1 .navigation1 ul {
+            list-style-type: none;
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+            float: left;
+        }
+
+            .sample1 .navigation1 ul li {
+                float: left;
+                margin: 0px 30px 0px 0px;
+            }
+
+        /* 一级导航菜单 */
+        .sample1 .navigation1 .menu {
+            /*background-color: cornflowerblue;*/
+            float: left;
+            margin-bottom: -3000px;
+            padding-bottom: 3000px;
+        }
+
+        /* 一级导航菜单 */
+        .sample1 .navigation1 .login {
+            /*background-color: darkgray;*/
+            float: right;
+            margin-bottom: -3000px;
+            padding-bottom: 3000px;
+        }
+
+            .sample1 .navigation1 .login a {
+                color: turquoise;
+            }
+
+    /* 二级导航菜单 */
+    .sample1 .navigation2 {
+        background-color: darkseagreen;
+        overflow: hidden;
+    }
+
+        .sample1 .navigation2 ul {
+            list-style-type: none;
+            list-style: none;
+            margin: 0px;
+            padding: 0;
+        }
+
+            .sample1 .navigation2 ul li {
+                background: #CCC;
+            }
+
+        /* 二级导航菜单 */
+        .sample1 .navigation2 .menu {
+            background-color: cornflowerblue;
+            float: left;
+            width: 150px;
+            margin-bottom: -3000px;
+            padding-bottom: 3000px;
+        }
+
+        /* 二级导航菜单 */
+        .sample1 .navigation2 .content {
+            background-color: antiquewhite;
+            margin-bottom: -3000px;
+            padding-bottom: 3000px;
+        }

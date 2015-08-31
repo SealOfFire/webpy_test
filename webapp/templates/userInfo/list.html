@@ -1,0 +1,26 @@
+﻿$def with(data)
+$var title: 用户一览
+<form method="post" action="/userInfo/list">
+	<table style="text-align: center; margin: 0 auto;">
+		<tr>
+			<td>用户名</td>
+			<td><input type="text" name="userName" id="userName"
+				value="$data.userName" /></td>
+			<td><input type="submit" value="查找" /></td>
+		</tr>
+	</table>
+	<table border="0" cellspacing="0" cellpadding="0"
+		style="text-align: center; margin: 0 auto; border: 1px solid #000000">
+		<tr>
+			<th style="border: 1px solid #000000">用户名</th>
+			<th style="border: 1px solid #000000">信息修改</th>
+			<th style="border: 1px solid #000000">权限修改</th>
+		</tr>
+		$for row in data.userInfoList:
+		<tr>
+			<td style="border: 1px solid #000000">$row["userName"]</td>
+			<td style="border: 1px solid #000000"><a href="/userInfo/modify?un=$row['userName']">修改</a></td>
+			<td style="border: 1px solid #000000"><a href="/userInfo/authority?un=$row['userName']">权限</a></td>
+		</tr>
+	</table>
+</form>

@@ -1,0 +1,32 @@
+[2015-08-31 14:51:54,953] - [INFO] - [logic] - [admin] - MenuManagement.setSelectedMenu begin
+[2015-08-31 14:51:54,954] - [DEBUG] - [logic] - [admin] - 选中的主菜单项目是[2:权限管理]
+[2015-08-31 14:51:54,956] - [DEBUG] - [logic] - [admin] - 选中的子菜单项目是[2:权限管理]
+[2015-08-31 14:51:54,956] - [INFO] - [logic] - [admin] - MenuManagement.setSelectedMenu end
+[2015-08-31 14:51:54,956] - [INFO] - [logic] - [admin] - AuthorityManagement.checkAuthority begin
+[2015-08-31 14:51:55,618] - [INFO] - [logic] - [admin] - MenuManagement.setSelectedMenu begin
+[2015-08-31 14:51:55,618] - [DEBUG] - [logic] - [admin] - 选中的主菜单项目是[3:GM指令]
+[2015-08-31 14:51:55,618] - [DEBUG] - [logic] - [admin] - 选中的子菜单项目是[3:GM指令]
+[2015-08-31 14:51:55,618] - [INFO] - [logic] - [admin] - MenuManagement.setSelectedMenu end
+[2015-08-31 14:51:55,618] - [INFO] - [logic] - [admin] - AuthorityManagement.checkAuthority begin
+[2015-08-31 14:52:00,634] - [DEBUG] - [web] - 日志初始化完成
+[2015-08-31 14:52:00,641] - [DEBUG] - [logic] - 逻辑处理日志初始化完成
+[2015-08-31 14:52:00,644] - [DEBUG] - [logic] - 数据库处理日志初始化完成
+[2015-08-31 14:52:00,664] - [INFO] - [web] - [anonymous] - 初始化网站 begin
+[2015-08-31 14:52:00,664] - [INFO] - [web] - [anonymous] - 初始化网站 end
+[2015-08-31 14:52:00,665] - [INFO] - [web] - [anonymous] - 创建web应用
+[2015-08-31 14:52:00,665] - [INFO] - [web] - [anonymous] - 创建session
+[2015-08-31 14:52:00,665] - [INFO] - [web] - [anonymous] - 加载模板
+[2015-08-31 14:52:00,665] - [INFO] - [web] - [anonymous] - 加载设置
+[2015-08-31 14:52:00,665] - [DEBUG] - [web] - [anonymous] - 网站启动
+[2015-08-31 14:52:01,920] - [INFO] - [logic] - [admin] - MenuManagement.setSelectedMenu begin
+[2015-08-31 14:52:01,920] - [DEBUG] - [logic] - [admin] - 选中的主菜单项目是[3:GM指令]
+[2015-08-31 14:52:01,920] - [DEBUG] - [logic] - [admin] - 选中的子菜单项目是[3:GM指令]
+[2015-08-31 14:52:01,920] - [INFO] - [logic] - [admin] - MenuManagement.setSelectedMenu end
+[2015-08-31 14:52:01,920] - [INFO] - [logic] - [admin] - AuthorityManagement.checkAuthority begin
+[2015-08-31 14:52:02,030] - [INFO] - [logic] - [admin] - 访问的路径[/gm/mail]是受权限保护路径
+[2015-08-31 14:52:15,693] - [INFO] - [logic] - [admin] - MenuManagement.setSelectedMenu begin
+[2015-08-31 14:52:15,694] - [DEBUG] - [logic] - [admin] - 选中的主菜单项目是[3:GM指令]
+[2015-08-31 14:52:15,694] - [DEBUG] - [logic] - [admin] - 选中的子菜单项目是[3:GM指令]
+[2015-08-31 14:52:15,694] - [INFO] - [logic] - [admin] - MenuManagement.setSelectedMenu end
+[2015-08-31 14:52:15,694] - [INFO] - [logic] - [admin] - AuthorityManagement.checkAuthority begin
+[2015-08-31 14:52:15,694] - [INFO] - [logic] - [admin] - 访问的路径[/gm/mail]是受权限保护路径

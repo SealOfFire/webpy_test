@@ -1,0 +1,23 @@
+﻿$def with(data)
+$var title: 权限一览
+<form method="post" action="/authority/list">
+	<table style="text-align: center; margin: 0 auto;">
+		<tr>
+			<td>用户名</td>
+			<td><input type="text" name="text" id="text" value="$data.text" /></td>
+			<td><input type="submit" value="查找" /></td>
+		</tr>
+	</table>
+	<table border="0" cellspacing="0" cellpadding="0"
+		style="text-align: center; margin: 0 auto; border: 1px solid #000000">
+		<tr>
+			<th style="border: 1px solid #000000">权限名</th>
+			<th style="border: 1px solid #000000">编辑</th>
+		</tr>
+		$for row in data.authorityList:
+		<tr>
+			<td style="border: 1px solid #000000">$row["comment"]</td>
+			<td style="border: 1px solid #000000"><a href="/authority/modify?id=$row['id']">编辑</a></td>
+		</tr>
+	</table>
+</form>

@@ -1,0 +1,49 @@
+﻿$def with(content)
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../static/style/common.css" />
+	<title>$content.title</title>
+</head>
+<body class="sample">
+	<div class="sample1">
+		<!--标题-->
+		<div class="title">
+			标题
+		</div>
+		<!-- 一级导航菜单 -->
+		<div class="navigation1">
+			<div class="menu">
+				$#根据登陆用户信息生成菜单项目
+				<ul>
+				    <li><a href="/">首页</a></li>
+				$if context.userInfo==None:
+					<ul>
+						
+					</ul>
+				$else:
+					$:context.menu.renderHtmlMenu()
+			</div>
+			<div class="login">
+			$if context.userInfo==None:
+				<a href="/login">登录</a>
+			$else:
+				<a href="/login">$context.userInfo.userName</a>
+			</div>
+		</div>
+		<!--<br />-->
+		<div class="navigation2">
+			<div class="menu">
+				$#根据一级菜单生成二级菜单
+				$if context.userInfo==None:
+					$pass
+				$else:
+					$:context.menu.renderHtmlSubMenu()
+			</div>
+			<div class="content">
+				$:content
+			</div>
+		</div>
+	</div>
+</body>
+</html>
